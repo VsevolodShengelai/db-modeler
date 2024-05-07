@@ -1,0 +1,24 @@
+<changeSet id="create-project-table" author="your_username">
+    <createTable tableName="Project">
+        <column name="id" type="int" autoIncrement="true">
+            <constraints primaryKey="true" nullable="false"/>
+        </column>
+        <column name="name" type="varchar(255)">
+            <constraints nullable="false"/>
+        </column>
+        <column name="description" type="text"/>
+        <column name="createdAt" type="timestamp">
+            <constraints nullable="false"/>
+        </column>
+        <column name="createdAt" type="timestamp">
+            <constraints nullable="false"/>
+        </column>
+        <column name="updatedAt" type="timestamp">
+            <constraints nullable="false"/>
+        </column>
+        <column name="dbml" type="text"/>
+        <column name="userId" type="int">
+            <constraints nullable="false"/>
+        </column>
+    </createTable>
+</changeSet>

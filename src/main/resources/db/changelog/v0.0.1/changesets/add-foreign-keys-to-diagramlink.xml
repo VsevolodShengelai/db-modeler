@@ -1,0 +1,16 @@
+<changeSet id="add-foreign-keys-to-diagramlink" author="Vsevolod">
+    <addForeignKeyConstraint baseTableName="DiagramLink"
+                             baseColumnNames="projectId"
+                             constraintName="fk_diagramlink_project"
+                             referencedTableName="Project"
+                             referencedColumnNames="id"
+                             onDelete="CASCADE"
+                             onUpdate="CASCADE"/>
+    <addForeignKeyConstraint baseTableName="DiagramLink"
+                             baseColumnNames="ownerId"
+                             constraintName="fk_diagramlink_user"
+                             referencedTableName="User"
+                             referencedColumnNames="id"
+                             onDelete="CASCADE"
+                             onUpdate="CASCADE"/>
+</changeSet>

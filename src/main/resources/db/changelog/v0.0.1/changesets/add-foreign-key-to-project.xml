@@ -1,0 +1,9 @@
+<changeSet id="add-foreign-key-to-project" author="Vsevolod">
+    <addForeignKeyConstraint baseTableName="Project"
+                             baseColumnNames="userId"
+                             constraintName="fk_project_user"
+                             referencedTableName="User"
+                             referencedColumnNames="id"
+                             onDelete="CASCADE"
+                             onUpdate="CASCADE"/>
+</changeSet>

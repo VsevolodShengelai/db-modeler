@@ -1,0 +1,18 @@
+<changeSet id="create-user-table" author="your_username">
+    <createTable tableName="User">
+        <column name="id" type="int" autoIncrement="true">
+            <constraints primaryKey="true" nullable="false"/>
+        </column>
+        <column name="username" type="varchar(255)">
+            <constraints unique="true" nullable="false"/>
+        </column>
+        <column name="email" type="varchar(255)">
+            <constraints unique="true" nullable="false"/>
+        </column>
+        <column name="password_hash" type="varchar(255)">
+            <constraints nullable="false"/>
+        </column>
+    </createTable>
+</changeSet>
+
+

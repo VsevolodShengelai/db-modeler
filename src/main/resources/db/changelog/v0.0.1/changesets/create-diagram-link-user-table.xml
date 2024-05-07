@@ -1,0 +1,13 @@
+<changeSet id="create-diagram-link-user-table" author="your_username">
+    <createTable tableName="DiagramLinkUser">
+        <column name="id" type="int" autoIncrement="true">
+            <constraints primaryKey="true" nullable="false"/>
+        </column>
+        <column name="diagramLinkId" type="int">
+            <constraints nullable="false"/>
+        </column>
+        <column name="userId" type="int">
+            <constraints nullable="false"/>ё
+        </column>
+    </createTable>
+</changeSet>
