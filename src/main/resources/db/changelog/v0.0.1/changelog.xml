@@ -3,11 +3,11 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
 
-    <include file="changesets/0.0.1/create-user-table.xml"/>
-    <include file="changesets/0.0.1/create-project-table.xml"/>
-    <include file="changesets/0.0.1/create-diagram-link-table.xml"/>
-    <include file="changesets/0.0.1/create-diagram-link-user-table.xml"/>
-    <include file="changesets/0.0.1/add-foreign-key-to-project.xml"/>
-    <include file="changesets/0.0.1/add-foreign-keys-to-diagramlink.xml"/>
-    <include file="changesets/0.0.1/add-foreign-keys-to-diagramlinkuser.xml"/>
+    <include file="changesets/create-user-table.xml" relativeToChangelogFile="true"/>
+    <include file="changesets/create-project-table.xml" relativeToChangelogFile="true"/>
+    <include file="changesets/create-diagram-link-table.xml" relativeToChangelogFile="true"/>
+    <include file="changesets/create-diagram-link-user-table.xml" relativeToChangelogFile="true"/>
+    <include file="changesets/add-foreign-key-to-project.xml" relativeToChangelogFile="true"/>
+    <include file="changesets/add-foreign-keys-to-diagramlink.xml" relativeToChangelogFile="true"/>
+    <include file="changesets/add-foreign-keys-to-diagramlinkuser.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>
